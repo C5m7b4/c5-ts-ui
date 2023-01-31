@@ -40,7 +40,7 @@ const Button = (props: ButtonProps) => {
     case 'normal':
       buttonStyle = {
         backgroundColor: hover ? '#877b87' : '',
-        color: hover ? '#fff' : '000',
+        color: hover ? '#fff' : '#000',
       };
       break;
     case 'green':
