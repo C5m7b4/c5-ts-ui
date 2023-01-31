@@ -1,0 +1,37 @@
+.c5-normal-button {
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .c5-normal-button:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .c5-normal-button:active {
+  transform: scale(0.96);
+ }
+ 
+ .c5-normal-button-small {
+  border-radius: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+ }
+ 
+ .c5-normal-button-medium {
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  font-size: 1.3rem;
+ }
+ 
+ .c5-normal-button-large {
+  border-radius: 10px;
+  padding: 20px 40px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  font-size: 2rem;
+ }
