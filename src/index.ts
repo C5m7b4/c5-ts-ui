@@ -12,6 +12,9 @@ import {
   TextFieldAutoComplete,
   TextFieldProps,
   TextField,
+  RippleTypes,
+  RippleButtonProps,
+  RippleButton,
 } from './components';
 
 import { Theme } from './types';
@@ -31,4 +34,7 @@ export {
   TextFieldAutoComplete,
   TextFieldProps,
   TextField,
+  RippleTypes,
+  RippleButtonProps,
+  RippleButton,
 };

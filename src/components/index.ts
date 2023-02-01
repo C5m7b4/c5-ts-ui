@@ -12,6 +12,7 @@ import {
   TextFieldProps,
   TextField,
 } from './TextField';
+import { RippleTypes, RippleButtonProps, RippleButton } from './RippleButton';
 
 export {
   Button,
@@ -26,4 +27,7 @@ export {
   TextFieldAutoComplete,
   TextFieldProps,
   TextField,
+  RippleTypes,
+  RippleButtonProps,
+  RippleButton,
 };
