@@ -4,5 +4,21 @@ import {
   NormalButtonType,
   NormalButtonSize,
   ButtonProps,
+  SelectField,
+  SelectFieldProps,
+  SelectTheme,
 } from './components';
-export { Add, Button, NormalButtonType, NormalButtonSize, ButtonProps };
+
+import { Theme } from './types';
+
+export {
+  Add,
+  Button,
+  NormalButtonType,
+  NormalButtonSize,
+  ButtonProps,
+  Theme,
+  SelectField,
+  SelectFieldProps,
+  SelectTheme,
+};
