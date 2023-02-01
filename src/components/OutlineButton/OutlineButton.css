@@ -1,0 +1,127 @@
+.c5-btn {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/* green */
+.c5-btn.success {
+  border-color: #04aa6d;
+  color: green;
+}
+
+.c5-btn.success:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.c5-btn.success:disabled {
+  background-color: gray;
+  color: green;
+}
+
+.c5-btn.success:active {
+  transform: scale(0.96);
+}
+
+/* blue */
+.c5-btn.info {
+  border-color: #2196f3;
+  color: dodgerblue;
+}
+
+.c5-btn.info:hover {
+  background: #2196f3;
+  color: white;
+}
+
+.c5-btn.info:disabled {
+  background-color: gray;
+  color: dodgerblue;
+}
+
+.c5-btn.info:active {
+  transform: scale(0.96);
+}
+
+/* Orange */
+.c5-btn.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.c5-btn.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+.c5-btn.warning:disabled {
+  background-color: gray;
+  color: orange;
+}
+
+.c5-btn.warning:active {
+  transform: scale(0.96);
+}
+
+/* red */
+.c5-btn.danger {
+  border-color: #f44336;
+  color: red;
+}
+
+.c5-btn.danger:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.c5-btn.danger:disabled {
+  background-color: gray;
+  color: red;
+}
+
+.c5-btn.danger:active {
+  transform: scale(0.96);
+}
+
+.c5-btn.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.c5-btn.default:hover {
+  background-color: #e7e7e7;
+}
+
+.c5-btn.default:disabled {
+  background-color: gray;
+  color: white;
+}
+
+.c5-btn.default:active {
+  transform: scale(0.96);
+}
+
+.c5-btn.dark {
+  border-color: #000;
+  color: black;
+}
+
+.c5-btn.dark:hover {
+  background-color: #000;
+  color: white;
+}
+
+.c5-btn.dark:disabled {
+  background-color: gray;
+  color: rgb(192, 181, 181);
+}
+
+.c5-btn.dark:active {
+  transform: scale(0.96);
+}

@@ -15,6 +15,9 @@ import {
   RippleTypes,
   RippleButtonProps,
   RippleButton,
+  OutlineButton,
+  OutlineButtonProps,
+  OutlineButtonTypes,
 } from './components';
 
 import { Theme } from './types';
@@ -37,4 +40,7 @@ export {
   RippleTypes,
   RippleButtonProps,
   RippleButton,
+  OutlineButton,
+  OutlineButtonProps,
+  OutlineButtonTypes,
 };

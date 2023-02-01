@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { RippleButton, RippleButtonProps } from '../components';
 
 export default {
-  title: 'Buttons',
+  title: 'RippleButtons',
   component: RippleButton,
 } as Meta;
 
