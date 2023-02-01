@@ -13,6 +13,11 @@ import {
   TextField,
 } from './TextField';
 import { RippleTypes, RippleButtonProps, RippleButton } from './RippleButton';
+import {
+  OutlineButton,
+  OutlineButtonProps,
+  OutlineButtonTypes,
+} from './OutlineButton';
 
 export {
   Button,
@@ -30,4 +35,7 @@ export {
   RippleTypes,
   RippleButtonProps,
   RippleButton,
+  OutlineButton,
+  OutlineButtonProps,
+  OutlineButtonTypes,
 };
