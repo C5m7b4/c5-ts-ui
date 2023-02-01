@@ -1,7 +1,7 @@
 {
   "name": "c5-ts-ui",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "a small ui library for react",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .ts",
@@ -14,8 +14,8 @@
     "build-storybook": "build-storybook"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "C5m7b4",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
