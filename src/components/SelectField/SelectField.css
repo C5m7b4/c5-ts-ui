@@ -1,0 +1,33 @@
+.c5cl-select-dark {
+  padding: 4px 5px;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+.c5cl-select-light {
+  padding: 4px 5px;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+}
+
+.c5cl-select .alert-danger {
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  padding: 4px 5px;
+}
+
+.c5cl-select-label-dark {
+  color: #000;
+}
+
+.c5cl-select-label-light {
+  color: #fff;
+}
