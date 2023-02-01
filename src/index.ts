@@ -7,6 +7,11 @@ import {
   SelectField,
   SelectFieldProps,
   SelectTheme,
+  TextTheme,
+  TextFieldType,
+  TextFieldAutoComplete,
+  TextFieldProps,
+  TextField,
 } from './components';
 
 import { Theme } from './types';
@@ -21,4 +26,9 @@ export {
   SelectField,
   SelectFieldProps,
   SelectTheme,
+  TextTheme,
+  TextFieldType,
+  TextFieldAutoComplete,
+  TextFieldProps,
+  TextField,
 };

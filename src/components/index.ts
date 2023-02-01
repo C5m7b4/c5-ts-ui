@@ -5,6 +5,13 @@ import {
   ButtonProps,
 } from './Button';
 import { SelectFieldProps, SelectField, SelectTheme } from './SelectField';
+import {
+  TextTheme,
+  TextFieldType,
+  TextFieldAutoComplete,
+  TextFieldProps,
+  TextField,
+} from './TextField';
 
 export {
   Button,
@@ -14,4 +21,9 @@ export {
   SelectFieldProps,
   SelectField,
   SelectTheme,
+  TextTheme,
+  TextFieldType,
+  TextFieldAutoComplete,
+  TextFieldProps,
+  TextField,
 };
