@@ -18,6 +18,7 @@ import {
   OutlineButtonProps,
   OutlineButtonTypes,
 } from './OutlineButton';
+import { CodeDisplay, CodeDisplayProps } from './CodeDisplay';
 
 export {
   Button,
@@ -38,4 +39,6 @@ export {
   OutlineButton,
   OutlineButtonProps,
   OutlineButtonTypes,
+  CodeDisplay,
+  CodeDisplayProps,
 };

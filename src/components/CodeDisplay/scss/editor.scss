@@ -1,0 +1,110 @@
+code {
+  display: block;
+  white-space: pre-wrap;
+  border: 1px solid #000;
+  line-height: 1.5em;
+  font-family: 'Lucidia Console', Monaco, monospace;
+  background-color: #000;
+  color: #fff;
+  border-left: 10px solid purple;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.code-content {
+  display: grid;
+  grid-template-columns: $gutter-size 1fr;
+}
+
+.line-number {
+  background-color: rgb(88, 85, 85);
+  padding-left: 5px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.code-line {
+  padding-left: 10px;
+}
+
+.editor-top-spacer {
+  min-height: 10px;
+  display: grid;
+  grid-template-columns: $gutter-size 1fr;
+}
+
+.editor-bottom-spacer {
+  min-height: 10px;
+  display: grid;
+  grid-template-columns: $gutter-size 1fr;
+}
+
+.editor-empty-line {
+  min-height: 10px;
+  display: grid;
+  grid-template-columns: $gutter-size 1fr;
+}
+
+.c5-editor-clipboard {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+code:hover .c5-editor-clipboard {
+  opacity: 0.9;
+}
+
+.c5-editor-clipboard-result {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+  background-color: rgb(133, 127, 127);
+}
+
+.c5-editor-clipboard-result::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgb(133, 127, 127);
+}
+
+.editor-tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.editor-tooltip .tooltiptext{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 999;
+}
+
+.editor-tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+

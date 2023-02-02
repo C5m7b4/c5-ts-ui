@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "build": "rm -rf dist && rollup -c",
+    "build": "rm -rf dist && rollup -c --silent && npm run editorScss && npm run minifyEditor",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "view:coverage": "start coverage/lcov-report/index.html",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "editorScss": "sass src/components/CodeDisplay/scss/main.scss dist/css/c5-editor.css",
+    "minifyEditor": "postcss dist/css/c5-editor.css > dist/css/c5-editor.min.css"
   },
   "keywords": [],
   "author": "C5m7b4",
@@ -22,6 +24,7 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
@@ -57,6 +60,7 @@
     "rollup-plugin-dts": "^5.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.58.0",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5"
   },
