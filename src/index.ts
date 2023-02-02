@@ -18,9 +18,13 @@ import {
   OutlineButton,
   OutlineButtonProps,
   OutlineButtonTypes,
+  CodeDisplay,
+  CodeDisplayProps,
 } from './components';
 
 import { Theme } from './types';
+
+export * from './utils';
 
 export {
   Add,
@@ -43,4 +47,6 @@ export {
   OutlineButton,
   OutlineButtonProps,
   OutlineButtonTypes,
+  CodeDisplay,
+  CodeDisplayProps,
 };
