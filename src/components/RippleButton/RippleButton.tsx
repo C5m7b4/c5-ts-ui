@@ -57,9 +57,6 @@ export const RippleButton = (props: RippleButtonProps): JSX.Element => {
       textColor = '#fff';
       break;
     default:
-      color = '#2952e3';
-      hoverColor = '#2546bd';
-      textColor = '#fff';
       break;
   }
 
