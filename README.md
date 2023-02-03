@@ -11,6 +11,8 @@ These are the components that we currently support
 
 [Button](#button)
 
+[CircularProgressBar](#circularprogressbar)
+
 [CodeDisplay](#codedisplay)
 
 [OutlineButton](#outlinebutton)
@@ -132,3 +134,14 @@ all booleans default to true
 |customAlternatives | ✅ | string array | your list of alternate words|
 |enableOperatorColor | ✅ | boolean | enable or disable coloring|
 |operatorColor| ✅ | color | color of operators|
+
+### CircularProgressBar
+
+|name|optional|datatype|description|
+|----|:------:|:------|:----------|
+|size| ✅ | number | size of the progress bar|
+|progress| [ ] | number | percentage of progress|
+|strokeWidth| ✅ | number| thickness of the outer circle|
+|circleStrokeOne| ✅ | color | background color of stroke|
+|showPercent | ✅ | boolean | whether to show the number of percentage in the center|
+|mode| ✅ | 'light', 'dark' | theme for progress bars text color|
