@@ -99,7 +99,7 @@ all booleans default to true
 |parserType| ✅ | 'babel', 'css', 'json', 'flow', 'babel-flow', 'babel-ts', 'typescript', 'json', 'markdown', 'html'|format to use for prettier|
 |colorInterfaceContents| ✅ | boolean | anything seperated by a color|
 |interfaceKey| ✅ | color | color of the left hand assignment|
-|interfaceValue } ✅ | color | color of the right hand assignment|
+|interfaceValue | ✅ | color | color of the right hand assignment|
 |enableDestructured| ✅ | boolean | color destructured props|
 |destructured| ✅ | color | color of destructured props|
 |curlyBracesColor| ✅ | color | color of curly braces|
