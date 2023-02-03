@@ -20,6 +20,8 @@ import {
   OutlineButtonTypes,
   CodeDisplay,
   CodeDisplayProps,
+  CircularProgressBar,
+  CircularProgressProps,
 } from './components';
 
 import { Theme } from './types';
@@ -49,4 +51,6 @@ export {
   OutlineButtonTypes,
   CodeDisplay,
   CodeDisplayProps,
+  CircularProgressBar,
+  CircularProgressProps,
 };

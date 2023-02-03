@@ -1,0 +1,24 @@
+.circular-progress-bar {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  max-height: 250px;
+  margin-top: 100px;
+  background: transparent;
+  color: #fff;
+}
+
+.circular-progress-bar-bg {
+  fill: none;
+}
+
+.circular-progress-bar-circle {
+  fill: none;
+}
+
+.circular-progress-bar-percentage {
+  font-size: 3rem;
+  text-anchor: middle;
+  font-weight: bold;
+  transform: translateY(10px);
+}

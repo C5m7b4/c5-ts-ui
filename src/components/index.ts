@@ -19,6 +19,10 @@ import {
   OutlineButtonTypes,
 } from './OutlineButton';
 import { CodeDisplay, CodeDisplayProps } from './CodeDisplay';
+import {
+  CircularProgressBar,
+  CircularProgressProps,
+} from './CircularProgressBar';
 
 export {
   Button,
@@ -41,4 +45,6 @@ export {
   OutlineButtonTypes,
   CodeDisplay,
   CodeDisplayProps,
+  CircularProgressBar,
+  CircularProgressProps,
 };

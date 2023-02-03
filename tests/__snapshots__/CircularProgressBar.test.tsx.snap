@@ -1,0 +1,387 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CircularProgressBar tests should handle dark mode 1`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#daf542"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="212.05750411731103"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#000"
+        x="75"
+        y="75"
+      >
+        50
+        %
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`CircularProgressBar tests should handle dark mode 2`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#daf542"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="212.05750411731103"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#fff"
+        x="75"
+        y="75"
+      >
+        50
+        %
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`CircularProgressBar tests should handle not showing progress 1`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#daf542"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="212.05750411731103"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#fff"
+        x="75"
+        y="75"
+      >
+        50
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`CircularProgressBar tests should render correctly 1`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#47e61c"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="84.82300164692441"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#000"
+        x="75"
+        y="75"
+      >
+        80
+        %
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`CircularProgressBar tests should render with a score above 50 1`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#daf542"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="190.85175370557994"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#000"
+        x="75"
+        y="75"
+      >
+        55
+        %
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`CircularProgressBar tests should render with a score below 25 1`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#f00e0e"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="352.0154568347363"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#000"
+        x="75"
+        y="75"
+      >
+        17
+        %
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`CircularProgressBar tests should render with a score below 50 1`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#f59b33"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="233.26325452904214"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#000"
+        x="75"
+        y="75"
+      >
+        45
+        %
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`CircularProgressBar tests should render with a score below 75 1`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#daf542"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="122.99335238804039"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#000"
+        x="75"
+        y="75"
+      >
+        71
+        %
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`CircularProgressBar tests should render with a score with 25 1`] = `
+<div>
+  <div>
+    <svg
+      class="circular-progress-bar"
+      height="150"
+      width="150"
+    >
+      <circle
+        class="circular-progress-bar-bg"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#d9edfe"
+        stroke-width="15"
+      />
+      <circle
+        class="circulare-progress-bar-circle"
+        cx="75"
+        cy="75"
+        fill="none"
+        r="67.5"
+        stroke="#f59b33"
+        stroke-dasharray="424.11500823462205"
+        stroke-dashoffset="318.0862561759665"
+        stroke-width="15"
+        style="transition: stroke-dashoffset 850ms ease-in-out, stroke 500ms linear;"
+      />
+      <text
+        class="circular-progress-bar-percentage"
+        fill="#000"
+        x="75"
+        y="75"
+      >
+        25
+        %
+      </text>
+    </svg>
+  </div>
+</div>
+`;
