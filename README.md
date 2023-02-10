@@ -10,6 +10,7 @@
 These are the components that we currently support
 
 - [Button](#button)
+- [CirclularProgressBar](#circularprogressbar)
 - [CodeDisplay](#codedisplay)
 - [OutlineButton](#outlinebutton)
 - [RippleButton](#ripplebutton)
@@ -20,7 +21,6 @@ These are the components that we currently support
 ## components
 
 ### Button
-
 
 | name | optional | datatype | description |
 |------|:--------:|:--------|:-----------|
@@ -129,7 +129,6 @@ all booleans default to true
 |enableOperatorColor | ✅ | boolean | enable or disable coloring|
 |operatorColor| ✅ | color | color of operators|
 
-
 ### ToggleSwitch
 
 |name|optional|datatype|description|
@@ -138,7 +137,6 @@ all booleans default to true
 |handleClick| [ ] | id=string, checked=boolean | this returns void |
 |active | [ ] | boolean | state of the button display |
 |disabled | ✅ | boolean | disable clicking of the component |
-
 
 ### CircularProgressBar
 
@@ -150,4 +148,3 @@ all booleans default to true
 |circleStrokeOne| ✅ | color | background color of stroke|
 |showPercent | ✅ | boolean | whether to show the number of percentage in the center|
 |mode| ✅ | 'light', 'dark' | theme for progress bars text color|
-
