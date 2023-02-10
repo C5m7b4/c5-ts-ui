@@ -22,7 +22,6 @@ These are the components that we currently support
 
 ### Button
 
-
 | name | optional | datatype | description |
 |------|:--------:|:--------|:-----------|
 |label| [ ]|string|The text to appear on the button|
