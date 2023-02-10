@@ -10,6 +10,7 @@
 These are the components that we currently support
 
 - [Button](#button)
+- [CirclularProgressBar](#circularprogressbar)
 - [CodeDisplay](#codedisplay)
 - [OutlineButton](#outlinebutton)
 - [RippleButton](#ripplebutton)
@@ -138,3 +139,13 @@ all booleans default to true
 |active | [ ] | boolean | state of the button display |
 |disabled | ✅ | boolean | disable clicking of the component |
 
+### CircularProgressBar
+
+|name|optional|datatype|description|
+|----|:------:|:------|:----------|
+|size| ✅ | number | size of the progress bar|
+|progress| [ ] | number | percentage of progress|
+|strokeWidth| ✅ | number| thickness of the outer circle|
+|circleStrokeOne| ✅ | color | background color of stroke|
+|showPercent | ✅ | boolean | whether to show the number of percentage in the center|
+|mode| ✅ | 'light', 'dark' | theme for progress bars text color|
