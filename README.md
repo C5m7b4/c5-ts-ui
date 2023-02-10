@@ -129,6 +129,7 @@ all booleans default to true
 |enableOperatorColor | ✅ | boolean | enable or disable coloring|
 |operatorColor| ✅ | color | color of operators|
 
+
 ### ToggleSwitch
 
 |name|optional|datatype|description|
@@ -137,4 +138,16 @@ all booleans default to true
 |handleClick| [ ] | id=string, checked=boolean | this returns void |
 |active | [ ] | boolean | state of the button display |
 |disabled | ✅ | boolean | disable clicking of the component |
+
+
+### CircularProgressBar
+
+|name|optional|datatype|description|
+|----|:------:|:------|:----------|
+|size| ✅ | number | size of the progress bar|
+|progress| [ ] | number | percentage of progress|
+|strokeWidth| ✅ | number| thickness of the outer circle|
+|circleStrokeOne| ✅ | color | background color of stroke|
+|showPercent | ✅ | boolean | whether to show the number of percentage in the center|
+|mode| ✅ | 'light', 'dark' | theme for progress bars text color|
 
