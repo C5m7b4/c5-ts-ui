@@ -23,6 +23,7 @@ import {
   CircularProgressBar,
   CircularProgressProps,
 } from './CircularProgressBar';
+import { ToggleSwitch, ToggleSwitchProps } from './ToggleSwitch';
 
 export {
   Button,
@@ -47,4 +48,6 @@ export {
   CodeDisplayProps,
   CircularProgressBar,
   CircularProgressProps,
+  ToggleSwitch,
+  ToggleSwitchProps,
 };
