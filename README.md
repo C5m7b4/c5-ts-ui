@@ -9,17 +9,13 @@
 
 These are the components that we currently support
 
-[Button](#button)
-
-[CodeDisplay](#codedisplay)
-
-[OutlineButton](#outlinebutton)
-
-[RippleButton](#ripplebutton)
-
-[SelectField](#selectfield)
-
-[TextField](#textfield)
+- [Button](#button)
+- [CodeDisplay](#codedisplay)
+- [OutlineButton](#outlinebutton)
+- [RippleButton](#ripplebutton)
+- [SelectField](#selectfield)
+- [TextField](#textfield)
+- [ToggleSwitch](#toggleswitch)
 
 ## components
 
@@ -132,3 +128,13 @@ all booleans default to true
 |customAlternatives | ✅ | string array | your list of alternate words|
 |enableOperatorColor | ✅ | boolean | enable or disable coloring|
 |operatorColor| ✅ | color | color of operators|
+
+### ToggleSwitch
+
+|name|optional|datatype|description|
+|----|:------:|:------|:----------|
+|id| [ ] | string | the id to associate with this instance |
+|handleClick| [ ] | id=string, checked=boolean | this returns void |
+|active | [ ] | boolean | state of the button display |
+|disabled | ✅ | boolean | disable clicking of the component |
+

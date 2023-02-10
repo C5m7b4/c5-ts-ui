@@ -22,6 +22,8 @@ import {
   CodeDisplayProps,
   CircularProgressBar,
   CircularProgressProps,
+  ToggleSwitch,
+  ToggleSwitchProps,
 } from './components';
 
 import { Theme } from './types';
@@ -53,4 +55,6 @@ export {
   CodeDisplayProps,
   CircularProgressBar,
   CircularProgressProps,
+  ToggleSwitch,
+  ToggleSwitchProps,
 };
