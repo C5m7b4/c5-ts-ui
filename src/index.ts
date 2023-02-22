@@ -24,6 +24,10 @@ import {
   CircularProgressProps,
   ToggleSwitch,
   ToggleSwitchProps,
+  Tooltip,
+  TooltipPosition,
+  TooltipTheme,
+  TooltipProps,
 } from './components';
 
 import { Theme } from './types';
@@ -57,4 +61,8 @@ export {
   CircularProgressProps,
   ToggleSwitch,
   ToggleSwitchProps,
+  Tooltip,
+  TooltipPosition,
+  TooltipTheme,
+  TooltipProps,
 };
