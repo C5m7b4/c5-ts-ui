@@ -17,6 +17,7 @@ These are the components that we currently support
 - [SelectField](#selectfield)
 - [TextField](#textfield)
 - [ToggleSwitch](#toggleswitch)
+- [Tooltip](#tooltip)
 
 ## components
 
@@ -148,3 +149,14 @@ all booleans default to true
 |circleStrokeOne| ✅ | color | background color of stroke|
 |showPercent | ✅ | boolean | whether to show the number of percentage in the center|
 |mode| ✅ | 'light', 'dark' | theme for progress bars text color|
+
+### Tooltip
+
+|name|optional|datatype|description|
+|----|:------:|:------|:----------|
+|position? | ✅ | 'top', 'left', right', 'bottom' | where to position the tooltip relative to the children|
+|children | [ ] | React Component | any React component to use for displaying the tooltip|
+|message | [ ] | string | the message to display inside of the tooltip|
+|style | ✅ | Css Properties | additional styling to add to the tooltip|
+|theme | ✅ | 'light', 'dark' | theme to use for the tooltip|
+|messageStyle? | ✅ | Css Properties | additional styles to add to the message|

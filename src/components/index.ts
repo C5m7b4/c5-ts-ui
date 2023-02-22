@@ -24,6 +24,12 @@ import {
   CircularProgressProps,
 } from './CircularProgressBar';
 import { ToggleSwitch, ToggleSwitchProps } from './ToggleSwitch';
+import {
+  Tooltip,
+  TooltipPosition,
+  TooltipTheme,
+  TooltipProps,
+} from './Tooltip';
 
 export {
   Button,
@@ -50,4 +56,8 @@ export {
   CircularProgressProps,
   ToggleSwitch,
   ToggleSwitchProps,
+  Tooltip,
+  TooltipPosition,
+  TooltipTheme,
+  TooltipProps,
 };
