@@ -28,6 +28,10 @@ import {
   TooltipPosition,
   TooltipTheme,
   TooltipProps,
+  MultiSelect,
+  MultiSelectProps,
+  MultiSelectPortal,
+  MultiSelectPortalProps,
 } from './components';
 
 import { Theme } from './types';
@@ -65,4 +69,8 @@ export {
   TooltipPosition,
   TooltipTheme,
   TooltipProps,
+  MultiSelect,
+  MultiSelectProps,
+  MultiSelectPortal,
+  MultiSelectPortalProps,
 };

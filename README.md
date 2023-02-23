@@ -12,6 +12,7 @@ These are the components that we currently support
 - [Button](#button)
 - [CirclularProgressBar](#circularprogressbar)
 - [CodeDisplay](#codedisplay)
+- [MultiSelect](#multiselect)
 - [OutlineButton](#outlinebutton)
 - [RippleButton](#ripplebutton)
 - [SelectField](#selectfield)
@@ -160,3 +161,20 @@ all booleans default to true
 |style | ✅ | Css Properties | additional styling to add to the tooltip|
 |theme | ✅ | 'light', 'dark' | theme to use for the tooltip|
 |messageStyle? | ✅ | Css Properties | additional styles to add to the message|
+
+### MultiSelect
+
+|name|optional|datatype|description|
+|----|:------:|:------|:----------|
+| data | [ ] | array of data T[] | any array of data |
+| defaultOption | [ ] | string | the text to display in the select field |
+| keyDescriptor | [ ] | string | description to use for the key |
+| optionValue | [ ] | keyof T | used to store the string in the checked array |
+| optionText | [ ] | keytof T | the field to use to display in the checkbox |
+| checkedItems | [ ] string[] | array to use to store the checked items |
+| setCheckedItems | [ ] | function | function used to handle checking items |
+| id | ✅ | string | id to use for the component |
+| selectBoxId | ✅ | string | id of the default item |
+| backgroundColor | ✅ | string | color to use for the portal background |
+| selectId | ✅ | string | id to use for the select field |
+| inputId | ✅ | string | id of the input field |

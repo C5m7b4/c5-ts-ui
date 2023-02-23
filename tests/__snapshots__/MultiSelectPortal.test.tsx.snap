@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultiSelectPortal tests should handle checking a box 1`] = `<div />`;
+
+exports[`MultiSelectPortal tests should handle not opening the portal 1`] = `<div />`;
+
+exports[`MultiSelectPortal tests should not draw a portal 1`] = `<div />`;
+
+exports[`MultiSelectPortal tests should render correcctly 1`] = `<div />`;
+
+exports[`MultiSelectPortal tests should render correctly without an id 1`] = `<div />`;
