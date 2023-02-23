@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultiSelect tests should be able to click on the first checkbox 1`] = `
+<div>
+  <div
+    class="multi-select"
+  >
+    <div
+      class="select-box"
+      id="select-box-id"
+    >
+      <select
+        class="form-control"
+        id="select-id"
+      >
+        <option
+          style="display: none;"
+          value="0"
+        >
+          select a department
+        </option>
+      </select>
+    </div>
+    <div
+      id="ms-portal-container"
+    >
+      <div
+        class="multi-select-checkboxes"
+        id="multi-select-checkboxes"
+        style="top: 0px; left: 0px; background-color: rgb(31, 30, 30);"
+      >
+        <input
+          class="form-control"
+          id="multi-select-search"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <label>
+          <input
+            type="checkbox"
+          />
+          Grocery
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Nonfood
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          HBA
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Meat
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Meat by #
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Produce
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Produce by #
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MultiSelect tests should be callable withough a selectBoxId 1`] = `
+<div>
+  <div
+    class="multi-select"
+  >
+    <div
+      class="select-box"
+      id="select-box-id"
+    >
+      <select
+        class="form-control"
+        id="selectId"
+      >
+        <option
+          value="0"
+        >
+          select a department
+        </option>
+      </select>
+    </div>
+    <div
+      id="ms-portal-container"
+    />
+  </div>
+</div>
+`;
+
+exports[`MultiSelect tests should be callable without a backgroundColor, selectId, or inputId 1`] = `
+<div>
+  <div
+    class="multi-select"
+  >
+    <div
+      class="select-box"
+      id="select-box-id"
+    >
+      <select
+        class="form-control"
+        id="select-id"
+      >
+        <option
+          value="0"
+        >
+          select a department
+        </option>
+      </select>
+    </div>
+    <div
+      id="ms-portal-container"
+    />
+  </div>
+</div>
+`;
+
+exports[`MultiSelect tests should be callable without an id 1`] = `
+<div>
+  <div
+    class="multi-select"
+  >
+    <div
+      class="select-box"
+      id="selectBoxId"
+    >
+      <select
+        class="form-control"
+        id="selectId"
+      >
+        <option
+          value="0"
+        >
+          select a department
+        </option>
+      </select>
+    </div>
+    <div
+      id="ms-portal-container"
+    />
+  </div>
+</div>
+`;
+
+exports[`MultiSelect tests should be clickable 1`] = `
+<div>
+  <div
+    class="multi-select"
+  >
+    <div
+      class="select-box"
+      id="select-box-id"
+    >
+      <select
+        class="form-control"
+        id="select-id"
+      >
+        <option
+          style="display: none;"
+          value="0"
+        >
+          select a department
+        </option>
+      </select>
+    </div>
+    <div
+      id="ms-portal-container"
+    >
+      <div
+        class="multi-select-checkboxes"
+        id="multi-select-checkboxes"
+        style="top: 0px; left: 0px; background-color: rgb(31, 30, 30);"
+      >
+        <input
+          class="form-control"
+          id="multi-select-search"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <label>
+          <input
+            type="checkbox"
+          />
+          Grocery
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Nonfood
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          HBA
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Meat
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Meat by #
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Produce
+        </label>
+        <label>
+          <input
+            type="checkbox"
+          />
+          Produce by #
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MultiSelect tests should render correctcly 1`] = `
+<div>
+  <div
+    class="multi-select"
+  >
+    <div
+      class="select-box"
+      id="selectBoxId"
+    >
+      <select
+        class="form-control"
+        id="selectId"
+      >
+        <option
+          value="0"
+        >
+          select a department
+        </option>
+      </select>
+    </div>
+    <div
+      id="ms-portal-container"
+    />
+  </div>
+</div>
+`;

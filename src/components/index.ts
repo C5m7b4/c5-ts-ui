@@ -30,6 +30,12 @@ import {
   TooltipTheme,
   TooltipProps,
 } from './Tooltip';
+import {
+  MultiSelect,
+  MultiSelectProps,
+  MultiSelectPortal,
+  MultiSelectPortalProps,
+} from './MultiSelect';
 
 export {
   Button,
@@ -60,4 +66,8 @@ export {
   TooltipPosition,
   TooltipTheme,
   TooltipProps,
+  MultiSelect,
+  MultiSelectProps,
+  MultiSelectPortal,
+  MultiSelectPortalProps,
 };

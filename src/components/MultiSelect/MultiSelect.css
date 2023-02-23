@@ -1,0 +1,39 @@
+.select-box {
+  position: relative;
+}
+
+.multi-select-checkboxes {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #2e3332;
+  z-index: 999;
+  max-height: 300px;
+  overflow-y: scroll;
+  animation: fadeInMultiSelectPortal 1s ease;
+}
+
+.multi-select-checkboxes label {
+  display: block;
+  padding: 3px 8px;
+  color: #fff;
+}
+
+.multi-select-checkboxes input {
+  margin-right: 5px;
+}
+
+.multi-select-checkboxes input:active,
+.multi-select-checkboxes input:focus {
+  outline: none;
+  border: 0;
+}
+
+@keyframes fadeInMultiSelectPortal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
