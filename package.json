@@ -1,6 +1,6 @@
 {
   "name": "c5-ts-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a small ui library for react",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -23,8 +23,8 @@
   "keywords": [],
   "author": "C5m7b4",
   "license": "MIT",
-  "repository":{
-    "type":"git",
+  "repository": {
+    "type": "git",
     "url": "https://github.com/C5m7b4/c5-ts-ui"
   },
   "devDependencies": {
