@@ -14,6 +14,7 @@ These are the components that we currently support
 - [CodeDisplay](#codedisplay)
 - [MultiSelect](#multiselect)
 - [OutlineButton](#outlinebutton)
+- [Password Strength Meter](#password-strength-meter)
 - [RippleButton](#ripplebutton)
 - [SelectField](#selectfield)
 - [TextField](#textfield)
@@ -178,3 +179,11 @@ all booleans default to true
 | backgroundColor | ✅ | string | color to use for the portal background |
 | selectId | ✅ | string | id to use for the select field |
 | inputId | ✅ | string | id of the input field |
+
+### Password Strength Meter
+
+|name|optional|datatype|description|
+|----|:------:|:------|:----------|
+| userid | [ ] | number | userid to associate with the password |
+| confirmPasswordChange | [ ] | function | function to use when submitting the new password. returns new password |
+
