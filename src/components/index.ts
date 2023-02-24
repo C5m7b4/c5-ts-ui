@@ -36,6 +36,7 @@ import {
   MultiSelectPortal,
   MultiSelectPortalProps,
 } from './MultiSelect';
+import { PSM, PSMProps } from './PSM';
 
 export {
   Button,
@@ -70,4 +71,6 @@ export {
   MultiSelectProps,
   MultiSelectPortal,
   MultiSelectPortalProps,
+  PSM,
+  PSMProps,
 };

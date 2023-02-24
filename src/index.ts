@@ -32,6 +32,8 @@ import {
   MultiSelectProps,
   MultiSelectPortal,
   MultiSelectPortalProps,
+  PSM,
+  PSMProps,
 } from './components';
 
 import { Theme } from './types';
@@ -73,4 +75,6 @@ export {
   MultiSelectProps,
   MultiSelectPortal,
   MultiSelectPortalProps,
+  PSM,
+  PSMProps,
 };
