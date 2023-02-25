@@ -34,6 +34,8 @@ import {
   MultiSelectPortalProps,
   PSM,
   PSMProps,
+  Calendar,
+  CalendarProps,
 } from './components';
 
 import { Theme } from './types';
@@ -77,4 +79,6 @@ export {
   MultiSelectPortalProps,
   PSM,
   PSMProps,
+  Calendar,
+  CalendarProps,
 };

@@ -10,6 +10,7 @@
 These are the components that we currently support
 
 - [Button](#button)
+- [Calendar](#calendar)
 - [CirclularProgressBar](#circularprogressbar)
 - [CodeDisplay](#codedisplay)
 - [MultiSelect](#multiselect)
@@ -187,3 +188,9 @@ all booleans default to true
 | userid | [ ] | number | userid to associate with the password |
 | confirmPasswordChange | [ ] | function | function to use when submitting the new password. returns new password |
 
+### Calendar
+
+|name|optional|datatype|description|
+|----|:------:|:------|:----------|
+| onChange | [ ] | function takes date | the event to fire when a date has been clicked |
+| date | ✅ | string | the default date to make active on the calendar
