@@ -1,5 +1,5 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
+import { getDateDetails } from '../src';
 import { fireEvent, render } from '@testing-library/react';
 
 import { Calendar } from '../src';
@@ -31,7 +31,12 @@ describe('Calendar tests', () => {
 
   test('should handle not having a default date', () => {
     const { container } = render(<Calendar onChange={testfn} />);
-    expect(container).toMatchSnapshot();
+    // make sure that that date in the selected class has the correct date
+    const selected = container.querySelector('.selected') as HTMLDivElement;
+    // now we get the span that is inside of that and make sure it matches the day of the month
+    const span = selected.querySelector('span') as HTMLSpanElement;
+    const { day } = getDateDetails(new Date());
+    expect(span.innerHTML.toString()).toEqual(day.toString());
   });
 
   test('should render next month', () => {
