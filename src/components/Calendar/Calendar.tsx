@@ -7,6 +7,8 @@ import {
   formatDate,
   addDays,
 } from '../../utils';
+import EventList from './Events/EventList';
+import EventViewer from './Events/EventViewer';
 
 import './Calendar.css';
 
@@ -25,9 +27,19 @@ const defaultState = {
   selectedDate: new Date(),
 };
 
+export interface CalendarEvent {
+  id: number;
+  date: Date;
+  title: string;
+  description: string;
+  start?: string;
+  end?: string;
+}
+
 export interface CalendarProps {
   onChange: (d: Date) => void;
   date?: Date;
+  events?: CalendarEvent[];
 }
 
 const Calendar = (props: CalendarProps) => {
@@ -35,9 +47,42 @@ const Calendar = (props: CalendarProps) => {
   const [currentMonth, setCurrentMonth] = useState(
     props.date || defaultState.currentMonth
   );
+  const [showEventViewer, setShowEventViewer] = useState(false);
+  const [currentEvent, setCurrentEvent] = useState<CalendarEvent | null>(null);
+  const [showEventList, setShowEventList] = useState(false);
+  const [currentEventList, setCurrentEventList] = useState<CalendarEvent[]>([]);
+
+  let uniqueId = 0;
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   useEffect(() => {}, [currentMonth, selectedDate]);
+
+  const getUniqueId = () => {
+    uniqueId++;
+    return uniqueId;
+  };
+
+  const hideEventViewer = () => {
+    const div = document.querySelector('.calendar-modal') as HTMLDivElement;
+    /* istanbul ignore else */
+    if (div) {
+      div.style.animationName = 'fadeOutEvent';
+      setTimeout(() => {
+        setShowEventViewer(false);
+      }, 300);
+    }
+  };
+
+  const hideEventList = () => {
+    const div = document.querySelector('.calendar-modal') as HTMLDivElement;
+    /* istanbul ignore else */
+    if (div) {
+      div.style.animationName = 'fadeOutEvent';
+      setTimeout(() => {
+        setShowEventList(false);
+      }, 300);
+    }
+  };
 
   const renderHeader = () => {
     return (
@@ -71,6 +116,68 @@ const Calendar = (props: CalendarProps) => {
     return <div className="days row">{days}</div>;
   };
 
+  const displayEventDetails = (event: CalendarEvent) => {
+    setShowEventList(false);
+    setCurrentEvent(event);
+    setShowEventViewer(true);
+  };
+
+  const displayEventList = (e: CalendarEvent[]) => {
+    setShowEventViewer(false);
+    setCurrentEventList(e);
+    setShowEventList(true);
+  };
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
+  const handleEventViewerOK = (e: CalendarEvent | null) => {};
+
+  const formatShortDate = (d: Date) => {
+    const day = d.getDate();
+    const month = d.getMonth() + 1;
+    const year = d.getFullYear();
+    return month.toString() + day.toString() + year.toString();
+  };
+
+  const renderTodaysEvents = (day: Date) => {
+    const eventsArray = [];
+    if (!props.events) {
+      return null;
+    }
+    const filteredEvents = props.events.filter(
+      (e) => formatDate(e.date) === formatDate(day)
+    );
+
+    if (filteredEvents && filteredEvents.length > 0) {
+      if (filteredEvents.length > 2) {
+        eventsArray.push(
+          <span
+            key={`ear-${getUniqueId()}`}
+            className="event-list"
+            onClick={() => displayEventList(filteredEvents)}
+            data-testid="event-list"
+          >
+            Events...({filteredEvents.length})
+          </span>
+        );
+      } else {
+        filteredEvents.map((event, idx) => {
+          eventsArray.push(
+            <span
+              key={`ced-${idx}-${getUniqueId()}`}
+              className={`event-${idx % 2 === 0 ? 'one' : 'two'}`}
+              onClick={() => displayEventDetails(event)}
+              title={event.title}
+              data-testid={`event-${idx}-${formatShortDate(day)}`}
+            >
+              {event.title}
+            </span>
+          );
+        });
+      }
+      return <span key={`events-array-${getUniqueId()}`}>{eventsArray}</span>;
+    }
+  };
+
   const renderCells = () => {
     const { month, year } = getDateDetails(currentMonth);
     const monthStart = new Date(year, month, 1);
@@ -102,6 +209,7 @@ const Calendar = (props: CalendarProps) => {
           >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
+            <span>{renderTodaysEvents(day)}</span>
           </div>
         );
         day = addDays(day, 1);
@@ -160,6 +268,19 @@ const Calendar = (props: CalendarProps) => {
       {renderHeader()}
       {renderDays()}
       {renderCells()}
+      <div className="modal-placeholder" id="modal-placeholder">
+        <EventViewer
+          hide={hideEventViewer}
+          show={showEventViewer}
+          event={currentEvent}
+          handleClick={handleEventViewerOK}
+        />
+        <EventList
+          show={showEventList}
+          events={currentEventList}
+          hide={hideEventList}
+        />
+      </div>
     </div>
   );
 };

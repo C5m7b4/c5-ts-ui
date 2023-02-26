@@ -194,3 +194,17 @@ all booleans default to true
 |----|:------:|:------|:----------|
 | onChange | [ ] | function takes date | the event to fire when a date has been clicked |
 | date | ✅ | string | the default date to make active on the calendar
+| events | ✅ | CalendarEvent[] | an array of CalendarEvents |
+
+This calendar is capable of handling events in the props now
+
+```js
+export interface CalendarEvent {
+  id: number;
+  date: Date;
+  title: string;
+  description: string;
+  start?: string;
+  end?: string;
+}
+```
