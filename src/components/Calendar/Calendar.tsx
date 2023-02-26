@@ -64,6 +64,7 @@ const Calendar = (props: CalendarProps) => {
 
   const hideEventViewer = () => {
     const div = document.querySelector('.calendar-modal') as HTMLDivElement;
+    /* istanbul ignore else */
     if (div) {
       div.style.animationName = 'fadeOutEvent';
       setTimeout(() => {
@@ -74,6 +75,7 @@ const Calendar = (props: CalendarProps) => {
 
   const hideEventList = () => {
     const div = document.querySelector('.calendar-modal') as HTMLDivElement;
+    /* istanbul ignore else */
     if (div) {
       div.style.animationName = 'fadeOutEvent';
       setTimeout(() => {

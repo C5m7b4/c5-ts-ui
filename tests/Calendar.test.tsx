@@ -1,9 +1,11 @@
 import React from 'react';
 import { getDateDetails } from '../src';
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 import { Calendar } from '../src';
-// import { act } from 'react-dom/test-utils';
+import { events } from '../src/components/Calendar/events';
+
+import { act } from 'react-dom/test-utils';
 
 const testfn = jest.fn();
 const testDate = new Date(2022, 2, 26);
@@ -94,5 +96,106 @@ describe('Calendar tests', () => {
     fireEvent.click(node);
     const innerHTML = node.querySelector('span')?.innerHTML;
     expect(innerHTML).toEqual('2');
+  });
+
+  test('should show events', () => {
+    const { container } = render(
+      <Calendar onChange={testfn} date={testDate} events={events} />
+    );
+    expect(container).toMatchSnapshot();
+  });
+  test('should show event', () => {
+    jest.useFakeTimers();
+    const { container } = render(
+      <Calendar onChange={testfn} date={testDate} events={events} />
+    );
+    const div = screen.getByTestId('event-0-3152022');
+    fireEvent.click(div);
+    jest.advanceTimersByTime(1000);
+    expect(container).toMatchSnapshot();
+  });
+
+  test('should show event list', () => {
+    jest.useFakeTimers();
+    const { container } = render(
+      <Calendar onChange={testfn} date={testDate} events={events} />
+    );
+    const div = screen.getByTestId('event-list');
+    fireEvent.click(div);
+    jest.advanceTimersByTime(1000);
+    expect(container).toMatchSnapshot();
+  });
+
+  test('should handle closing the EventViewer', () => {
+    jest.useFakeTimers();
+    const { container } = render(
+      <Calendar onChange={testfn} date={testDate} events={events} />
+    );
+    const div = screen.getByTestId('event-0-3152022');
+    act(() => {
+      fireEvent.click(div);
+      jest.advanceTimersByTime(1000);
+    });
+
+    const btn = container.querySelector(
+      '.close-box > button'
+    ) as HTMLButtonElement;
+    act(() => {
+      fireEvent.click(btn);
+      jest.advanceTimersByTime(1000);
+    });
+  });
+
+  test('should handle closing EventList', () => {
+    jest.useFakeTimers();
+    const { container } = render(
+      <Calendar onChange={testfn} date={testDate} events={events} />
+    );
+
+    const div = screen.getByTestId('event-list');
+    act(() => {
+      fireEvent.click(div);
+      jest.advanceTimersByTime(1000);
+    });
+
+    const btn = container.querySelector(
+      '.close-box > button'
+    ) as HTMLButtonElement;
+    act(() => {
+      fireEvent.click(btn);
+      jest.advanceTimersByTime(500);
+    });
+  });
+
+  test('should handle ok on event', () => {
+    jest.useFakeTimers();
+    render(<Calendar onChange={testfn} date={testDate} events={events} />);
+    const div = screen.getByTestId('event-0-3152022');
+    act(() => {
+      fireEvent.click(div);
+      jest.advanceTimersByTime(1000);
+    });
+
+    const okBtn = screen.getByText('OK');
+    act(() => {
+      fireEvent.click(okBtn);
+      jest.advanceTimersByTime(500);
+    });
+  });
+
+  test('should handle clicking an event in the EventList', () => {
+    jest.useFakeTimers();
+    render(<Calendar onChange={testfn} date={testDate} events={events} />);
+
+    const div = screen.getByTestId('event-list');
+    act(() => {
+      fireEvent.click(div);
+      jest.advanceTimersByTime(1000);
+    });
+
+    const ev = screen.getByTestId('el-e-1') as HTMLDivElement;
+    act(() => {
+      fireEvent.click(ev);
+    });
   });
 });

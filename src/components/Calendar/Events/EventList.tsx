@@ -49,7 +49,7 @@ const EventList = (props: EventListProps) => {
                           key={`eli-${idx}`}
                           className="event-list-item"
                           onClick={() => handleClick(event)}
-                          data-test-id={`el-e-${idx}`}
+                          data-testid={`el-e-${idx}`}
                         >
                           <span>{event.title}</span>
                         </div>
