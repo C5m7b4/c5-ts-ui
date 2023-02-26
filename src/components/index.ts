@@ -37,7 +37,14 @@ import {
   MultiSelectPortalProps,
 } from './MultiSelect';
 import { PSM, PSMProps } from './PSM';
-import { Calendar, CalendarProps } from './Calendar';
+import {
+  Calendar,
+  CalendarProps,
+  EventListProps,
+  EventList,
+  EventViewerProps,
+  EventViewer,
+} from './Calendar';
 
 export {
   Button,
@@ -76,4 +83,8 @@ export {
   PSMProps,
   Calendar,
   CalendarProps,
+  EventListProps,
+  EventList,
+  EventViewerProps,
+  EventViewer,
 };

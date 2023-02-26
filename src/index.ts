@@ -36,6 +36,10 @@ import {
   PSMProps,
   Calendar,
   CalendarProps,
+  EventListProps,
+  EventList,
+  EventViewerProps,
+  EventViewer,
 } from './components';
 
 import { Theme } from './types';
@@ -81,4 +85,8 @@ export {
   PSMProps,
   Calendar,
   CalendarProps,
+  EventListProps,
+  EventList,
+  EventViewerProps,
+  EventViewer,
 };
