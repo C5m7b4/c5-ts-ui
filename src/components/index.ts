@@ -46,6 +46,20 @@ import {
   EventViewer,
 } from './Calendar';
 
+import {
+  DatePicker,
+  DatePickerProps,
+  DatePickerContentProps,
+  CalendarDay,
+  DatePickerContents,
+  daysMap,
+  getDayDetailsProps,
+  getDayDetails,
+  MonthDetailsType,
+  getMonthDetails,
+  convertToDateFormat,
+} from './DatePicker';
+
 export {
   Button,
   NormalButtonType,
@@ -87,4 +101,15 @@ export {
   EventList,
   EventViewerProps,
   EventViewer,
+  DatePicker,
+  DatePickerProps,
+  DatePickerContentProps,
+  CalendarDay,
+  DatePickerContents,
+  daysMap,
+  getDayDetailsProps,
+  getDayDetails,
+  MonthDetailsType,
+  getMonthDetails,
+  convertToDateFormat,
 };

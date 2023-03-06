@@ -40,6 +40,17 @@ import {
   EventList,
   EventViewerProps,
   EventViewer,
+  DatePicker,
+  DatePickerProps,
+  DatePickerContentProps,
+  CalendarDay,
+  DatePickerContents,
+  daysMap,
+  getDayDetailsProps,
+  getDayDetails,
+  MonthDetailsType,
+  getMonthDetails,
+  convertToDateFormat,
 } from './components';
 
 import { Theme } from './types';
@@ -89,4 +100,15 @@ export {
   EventList,
   EventViewerProps,
   EventViewer,
+  DatePicker,
+  DatePickerProps,
+  DatePickerContentProps,
+  CalendarDay,
+  DatePickerContents,
+  daysMap,
+  getDayDetailsProps,
+  getDayDetails,
+  MonthDetailsType,
+  getMonthDetails,
+  convertToDateFormat,
 };
