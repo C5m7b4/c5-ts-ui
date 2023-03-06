@@ -5,7 +5,7 @@ import { data } from './data';
 import { backspace } from './helper';
 import { act } from 'react-dom/test-utils';
 
-const createBubbledEvent = (type, props = {}) => {
+export const createBubbledEvent = (type, props = {}) => {
   const event = new Event(type, { bubbles: true });
   Object.assign(event, props);
   return event;
