@@ -10,7 +10,10 @@ describe('DatePicker tests', () => {
     const { container } = render(
       <DatePicker onChange={testfn} date={new Date('3/2/2023')} />
     );
-    expect(container).toMatchSnapshot();
+    const input = container.querySelector(
+      '#c5-dp-1 > input'
+    ) as HTMLInputElement;
+    expect(input.value).toEqual('2023-03-02');
   });
 
   test('should handle month change backwards', () => {
