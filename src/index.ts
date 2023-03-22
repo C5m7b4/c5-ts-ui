@@ -43,14 +43,7 @@ import {
   DatePicker,
   DatePickerProps,
   DatePickerContentProps,
-  CalendarDay,
   DatePickerContents,
-  daysMap,
-  getDayDetailsProps,
-  getDayDetails,
-  MonthDetailsType,
-  getMonthDetails,
-  convertToDateFormat,
 } from './components';
 
 import { Theme } from './types';
@@ -103,12 +96,5 @@ export {
   DatePicker,
   DatePickerProps,
   DatePickerContentProps,
-  CalendarDay,
   DatePickerContents,
-  daysMap,
-  getDayDetailsProps,
-  getDayDetails,
-  MonthDetailsType,
-  getMonthDetails,
-  convertToDateFormat,
 };
