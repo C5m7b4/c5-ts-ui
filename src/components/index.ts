@@ -50,14 +50,7 @@ import {
   DatePicker,
   DatePickerProps,
   DatePickerContentProps,
-  CalendarDay,
   DatePickerContents,
-  daysMap,
-  getDayDetailsProps,
-  getDayDetails,
-  MonthDetailsType,
-  getMonthDetails,
-  convertToDateFormat,
 } from './DatePicker';
 
 export {
@@ -104,12 +97,5 @@ export {
   DatePicker,
   DatePickerProps,
   DatePickerContentProps,
-  CalendarDay,
   DatePickerContents,
-  daysMap,
-  getDayDetailsProps,
-  getDayDetails,
-  MonthDetailsType,
-  getMonthDetails,
-  convertToDateFormat,
 };

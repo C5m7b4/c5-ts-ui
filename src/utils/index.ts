@@ -12,6 +12,8 @@ import {
   addDays,
 } from './date';
 
+import { PadInput, PadDirection, pad } from './pad';
+
 export {
   FormatDateType,
   getDateDetails,
@@ -20,4 +22,7 @@ export {
   isSameDay,
   formatDate,
   addDays,
+  PadInput,
+  PadDirection,
+  pad,
 };

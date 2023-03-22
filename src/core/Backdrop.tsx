@@ -15,7 +15,7 @@ const Backdrop = ({ show, close, id }: BackdropProps) => {
     left: 0,
     right: 0,
     display: show ? 'block' : 'none',
-    background: 'rgbs(0, 0, 0, 0.3)',
+    background: 'rgba(0, 0, 0, 0.3)',
     cursor: 'pointer',
   } as React.CSSProperties;
 
@@ -23,6 +23,7 @@ const Backdrop = ({ show, close, id }: BackdropProps) => {
     <div
       id={`${id}-backdrop`}
       style={backdropStyle}
+      className={`${id}-backdrop`}
       onClick={() => close()}
     ></div>
   );
